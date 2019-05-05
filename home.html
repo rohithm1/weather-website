@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <title> Weather </title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+
+    <!--contains the navbar-->    
+    <body class="navbar-container">
+      <div id="name"><h2><i>The Weather</i></h2></div>
+      <div id="personal-website"><h2><a href="http://rohithmandavilli.me">About me</a></h2></div>
+    </body>
+
+    <!--contains the weather information-->
+    <body class = "weather">
+      <!--display the current weather in location-->
+      <div class = "current">
+        <h3><div id="current"></div></h3>
+        <h1><div id="temp"></div><div id="minutely"></div></h1>
+        <h2><div id="location"></div></h2>
+      </div>
+      <!--handles the next 7 day forcast-->
+      <div class = "forecast">
+        <h3><div id="forecast"></div></h3>
+        <h2><div id="loc"></div></h2>
+          <!--used contained to have appropriate spacing in css file-->
+          <div class="week-container">
+            <div class="day1-container">
+              <h4><div id="day1"></div></h4>
+              <h4><div id="temp1"></div></h4>
+              <h4><div id="description1"></div></h4>
+              <div id="pic1"></div>
+            </div>
+            <div class="day2-container">
+              <h4><div id="day2"></div></h4>
+              <h4><div id="temp2"></div></h4>
+              <h4><div id="description2"></div></h4>
+              <div id="pic2"></div>
+            </div>
+            <div class="day3-container">
+              <h4><div id="day3"></div></h4>
+              <h4><div id="temp3"></div></h4>
+              <h4><div id="description3"></div></h4>
+              <div id="pic3"></div>
+            </div>
+            <div class="day4-container">
+              <h4><div id="day4"></div></h4>
+              <h4><div id="temp4"></div></h4>
+              <h4><div id="description4"></div></h4>
+              <div id="pic4"></div>
+            </div>
+            <div class="day5-container">
+              <h4><div id="day5"></div></h4>
+              <h4><div id="temp5"></div></h4>
+              <h4><div id="description5"></div></h4>
+              <div id="pic5"></div>
+            </div>
+            <div class="day6-container">
+              <h4><div id="day6"></div></h4>
+              <h4><div id="temp6"></div></h4>
+              <h4><div id="description6"></div></h4>
+              <div id="pic6"></div>
+            </div>
+            <div class="day7-container">
+              <h4><div id="day7"></div></h4>
+              <h4><div id="temp7"></div></h4>
+              <h4><div id="description7"></div></h4>
+              <div id="pic7"></div>
+            </div>
+          </div>
+      </div>
+    </body>
+       <script src="weather.js"></script>
+
+    <!--need to give credit to API usage-->
+    <div class="api">
+       <p>powered by <a href="https://darksky.net/dev">darksky</a>/<a href="https://openweathermap.org/api">openweather</a>
+          and developed by Rohith Mandavilli</p>
+     </div>
+</html>
